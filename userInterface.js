@@ -66,7 +66,7 @@ function displayFiles(err, files) {
     files.forEach(displayFile);
 }
 
-function bindDocument (window) {
+function bindDocument(window) {
     if (!document) {
         document = window.document;
     }
@@ -77,7 +77,9 @@ function bindSearchField(cb) {
 }
 
 function filterResults(results) {
-    const validFilePaths = results.map((result) => { return result.ref; });
+    const validFilePaths = results.map((result) => {
+        return result.ref;
+    });
     const items = document.getElementsByClassName('item');
     for (let i = 0; i < items.length; i++) {
         let item = items[i];
@@ -98,13 +100,13 @@ function resetFilter() {
     }
 }
 
-function convertFolderPathIntoLinks (folderPath) {
+function convertFolderPathIntoLinks(folderPath) {
     const folders = folderPath.split(path.sep);
-    const contents    = [];
+    const contents = [];
     let pathAtFolder = '';
     folders.forEach((folder) => {
         pathAtFolder += folder + path.sep;
-        contents.push(`<span class="path" data-path="${pathAtFolder.slice(0,-1)}">${folder}</span>`);
+        contents.push(`<span class="path" data-path="${pathAtFolder.slice(0, -1)}">${folder}</span>`);
     });
     return contents.join(path.sep).toString();
 }
@@ -121,4 +123,4 @@ function bindCurrentFolderPath() {
     }
 }
 
-module.exports = { bindDocument, loadDirectory, bindSearchField, filterResults, resetFilter };
+module.exports = {bindDocument, loadDirectory, bindSearchField, filterResults, resetFilter};

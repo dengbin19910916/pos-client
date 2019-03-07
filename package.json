@@ -4,7 +4,7 @@
   "main": "main.js",
   "dependencies": {
     "async": "^2.6.2",
-    "lunr": "^2.3.6",
+    "lunr": "^1.0.0",
     "osenv": "^0.1.5"
   },
   "devDependencies": {
