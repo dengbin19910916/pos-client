@@ -1,12 +1,12 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Helvetica', 'Arial', 'sans', sans-serif;
+    font-family: 'Helvetica', 'Arial', 'sans', serif;
 }
 
 #toolbar {
     top: 0;
-    position: absolute;
+    position: fixed;
     background: red;
     width: 100%;
     z-index: 2;
@@ -15,7 +15,7 @@ body {
 #current-folder {
     float: left;
     color: white;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0,0,0,0.2);
     padding: 0.5em 1em;
     min-width: 10em;
     border-radius: 0.2em;
@@ -24,8 +24,7 @@ body {
 
 #main-area {
     clear: both;
-    margin: 2em;
-    margin-top: 3em;
+    margin: 3em 2em 2em;
     z-index: 1;
 }
 
@@ -42,4 +41,19 @@ body {
 .item .filename {
     padding-top: 1em;
     font-size: 10pt;
+}
+
+#search {
+    float: right;
+    padding: 0.5em;
+    min-width: 10em;
+    border-radius: 3em;
+    margin: 2em 1em;
+    border: none;
+    outline: none;
+}
+
+span.path:hover, img:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
