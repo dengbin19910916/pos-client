@@ -2,12 +2,20 @@
   "name": "pos-client",
   "version": "1.0.0",
   "main": "main.js",
+  "author": "Dengbin",
+  "description": "Pos Client",
   "dependencies": {
     "async": "^2.6.2",
     "lunr": "^1.0.0",
     "osenv": "^0.1.5"
   },
+  "scripts": {
+    "pack": "build",
+    "dist": "build"
+  },
   "devDependencies": {
-    "electron": "^4.0.7"
-  }
+    "electron": "^4.0.7",
+    "electron-builder": "^20.38.5"
+  },
+  "build": {}
 }
