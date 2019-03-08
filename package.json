@@ -4,6 +4,7 @@
   "main": "main.js",
   "author": "Dengbin",
   "description": "Pos Client",
+  "icon": "icon.icns",
   "dependencies": {
     "async": "^2.6.2",
     "chn-escpos": "^1.1.4",
@@ -12,6 +13,7 @@
     "request": "^2.88.0"
   },
   "scripts": {
+    "start": "electron .",
     "pack": "build",
     "dist": "build"
   },
