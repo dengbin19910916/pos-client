@@ -5,3 +5,6 @@ npm install -g electron
 
 ## 启动
 electron .
+
+## 打包
+npm run build
