@@ -7,4 +7,4 @@ npm install -g electron
 electron .
 
 ## 打包
-npm run build
+npm run pack
