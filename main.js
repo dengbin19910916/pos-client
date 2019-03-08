@@ -11,8 +11,8 @@ app.on('window-all-closed', () => {
 });
 
 app.on('ready', () => {
-    mainWindow = new BrowserWindow({width: 1366, height: 768, kiosk: true});
-    mainWindow.setFullScreen(true);
+    mainWindow = new BrowserWindow({width: 1366, height: 768, kiosk: false});
+    mainWindow.setFullScreen(false);
     mainWindow.loadURL(`file://${app.getAppPath()}/index.html`);
     mainWindow.on('closed', () => {
         mainWindow = null;
